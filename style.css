@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: #10163a;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 420px;
+  padding: 15px;
+  text-align: center;
+}
+
+.camera-box {
+  background: #000;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  /* PERBAIKAN: Flip horizontal untuk preview video di layar */
+  transform: scaleX(-1); 
+}
+
+.frame {
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.frame-img {
+  width: 100%;
+  display: block;
+}
+
+/* Slot foto (posisi harus kamu sesuaikan) */
+.slot {
+  position: absolute;
+  width: 78%;
+  height: 20%;
+  object-fit: cover;
+  border-radius: 12px;
+  /* Pastikan gambar di slot tidak ikut ter-mirror */
+  transform: scaleX(1); 
+}
+
+/* Geser sesuai layout frame */
+.slot1 {
+  top: 110px;
+  left: 40px;
+}
+
+.slot2 {
+  top: 370px;
+  left: 40px;
+}
+
+.slot3 {
+  top: 640px;
+  left: 40px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #ffde00;
+  font-weight: bold;
+}
